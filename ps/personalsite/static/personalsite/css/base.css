@@ -1,0 +1,62 @@
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    column-count: 3;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body.main{background-image:url(greentea.jpg);}
+
+
+.column {
+  float: left;
+  border-spacing: 5px;
+  column-gap: 20px;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.Aboutme {
+  padding: auto, auto, auto, 20px;
+}
+
+.Mywork {
+
+}
+
+.Learning {
+  padding: 1%;
+}
+
+.resume {
+  float: left;
+  border: solid;
+}
+
+.Getintouch {
+  float: right;
+  border: solid;
+}
+
+.p1 {
+  float:right;
+}
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
