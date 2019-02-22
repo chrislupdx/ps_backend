@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    
     'personalsite.apps.PersonalsiteConfig',
     'django.contrib.admin',
     'django.contrib.auth',
