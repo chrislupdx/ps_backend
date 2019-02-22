@@ -1,11 +1,13 @@
-function acquireLulz(){
-  setTimeout(() => {
-    const cheese = [1, 1331, 224]
-    console.log(cheese);
-  }, 2000)
-console.log("foood");
+function getexist() {
+fetch('https://exist.io/api/1/users/$self/today/')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    console.log(myJson);
+  });
 }
-acquireLulz();
+getexist();
 
 // const axios = require('axios')
 
@@ -32,12 +34,3 @@ acquireLulz();
 
 // fetch(url).then(data=>console.log(data));
 
-// function getexist() {
-// fetch('https://exist.io/api/1/users/$self/today/')
-//   .then(function(response) {
-//     return response.json();
-//   })
-//   .then(function(myJson) {
-//     console.log(myJson)
-//   });
-// }
